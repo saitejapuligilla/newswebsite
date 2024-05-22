@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Today</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>News Today</h1>
+        <nav>
+            <ul>
+                <li><a href="#world">World</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#sports">Sports</a></li>
+                <li><a href="#entertainment">Entertainment</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="world">
+            <h2>World News</h2>
+            <article>
+                <img src="photos/world-news1.jpg" alt="World News">
+                <h3>Global Summit 2024: Key Takeaways</h3>
+                <p>Leaders from around the world gathered to discuss major global issues including climate change and international security...</p>
+            </article>
+            <article>
+                <img src="photos/world-news2.jpg" alt="World News">
+                <h3>Historic Peace Agreement Signed</h3>
+                <p>A historic peace agreement has been signed between long-time adversaries, bringing hope for a more stable future in the region...</p>
+            </article>
+        </section>
+        <section id="technology">
+            <h2>Technology</h2>
+            <article>
+                <img src="photos/tech-news1.jpg" alt="Technology News">
+                <h3>Breakthrough in AI Technology</h3>
+                <p>New advancements in AI are paving the way for smarter applications in healthcare, finance, and more...</p>
+            </article>
+            <article>
+                <img src="photos/tech-news2.jpg" alt="Technology News">
+                <h3>Electric Cars: The Future of Transportation</h3>
+                <p>The latest models of electric cars are setting new standards for performance and sustainability...</p>
+            </article>
+        </section>
+        <section id="sports">
+            <h2>Sports</h2>
+            <article>
+                <img src="photos/sports-news1.jpg" alt="Sports News">
+                <h3>Champions League: Latest Results</h3>
+                <p>The latest matches have brought surprising results and intense competition, with several underdog teams rising to the occasion...</p>
+            </article>
+            <article>
+                <img src="photos/sports-news2.jpg" alt="Sports News">
+                <h3>Olympic Games 2024 Preview</h3>
+                <p>The countdown to the 2024 Olympic Games has begun, with athletes from around the world preparing to compete...</p>
+            </article>
+        </section>
+        <section id="entertainment">
+            <h2>Entertainment</h2>
+            <article>
+                <img src="photos/entertainment-news1.jpg" alt="Entertainment News">
+                <h3>Oscar Nominations 2024</h3>
+                <p>The nominations for the 2024 Oscars have been announced, with many surprises and expected favorites...</p>
+            </article>
+            <article class="entertain">
+                <img src="photos/entertainment-news2.jpg" alt="Entertainment News">
+                <h3>New Blockbuster Movie Released</h3>
+                <p>The latest blockbuster movie has been released to critical acclaim, with stunning visuals and an engaging storyline...</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 News Today. All rights reserved.</p>
+    </footer>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            
+            }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        
+        }
+        main{
+            margin-top: 100px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+            display: flex;
+            justify-content: center;
+        
+        }
+        nav ul li {
+            margin: 0 15px;
+            
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 5px 10px;
+            transition: all 0.3s ease-in-out;
+            
+        }
+
+        nav ul li a:hover {
+            background-color: #007BFF;
+            color: #fff;
+            border-radius: 10px;
+        }
+        main {
+            padding: 80px 20px 20px; /* Adjusted for fixed header */
+        }
+
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 25px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            margin-top: 0;
+            border-bottom: 3px solid #333;
+            padding-bottom: 10px;
+            color: #444;
+        }
+
+        article {
+            display: flex;
+            align-items:center;
+            justify-content:flex-start;
+            margin-top: 20px;
+        }
+            
+        article img {
+            width: 350px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        article h3 {
+            margin: 0 0 10px;
+            font-size: 1.5em;
+            color: #007BFF;
+        }
+
+        article p {
+            margin: 0;
+        }
+
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            
+        }
+        .entertain{
+            margin-bottom: 40px;
+        }
+
+            </style>
+</body>
+</html>
